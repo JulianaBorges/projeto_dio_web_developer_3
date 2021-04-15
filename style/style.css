@@ -1,0 +1,129 @@
+ :root{
+     --vermelho: #ec131ee8;
+     --preta: #141414;
+ }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-size: 'Times New Roman',times,serif;
+    color:white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start; 
+}
+header {
+    margin:15px 0px;
+    display: flex;
+    justify-content:space-between;
+    align-items:baseline;
+}
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+}
+header nav{
+    margin-left: 5%;
+}
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+header .search{
+    margin-right: 20px;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(to left, transparent, black), url('/img/orphan-capa.jpg');
+    height: 600px;
+    background-size: cover;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.descricao{
+    width: 60%;  /*to do: atrapalha o respose*/
+    margin-bottom: 10px;
+}
+
+.titulo{
+    margin-top:15%;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,50);
+    border: none;
+    color:silver;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size:15px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: silver;
+    color: black;
+}
+
+.botao i{
+    margin-right:10px;
+
+}
+
+.container {
+    margin-left:2.5%;  
+}
+
+.box-filme{
+    height: 20%;
+    width: 20%;
+    display: flex;
+}
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 30%;
+    width: 30%;
+    display: block;
+    cursor: pointer;
+}
+
+
+.carrosel-filmes{
+    margin-top:2%;
+}
+
+.categoria{
+font-size: 40px;
+}
