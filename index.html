@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="js/main.js"></script>
+    <script src="js/jQuery v3.6.0.min.js"></script>
     
     <!--fontawesome js-->
     <script src="https://kit.fontawesome.com/b395ca1a6a.js" crossorigin="anonymous"></script>
@@ -27,9 +29,14 @@
                     <a href="#">Minha Lista</a>
             </nav>          
         </div>
-        <div class="search">
-            <i class="fas fa-search">Search</i>
-            <i class="fas fa-bell"></i>
+        <div class="notificacao">
+            <div class="search">
+                <input id="seach" type="text" placeholder="Seach" >
+                <i type="button" class="fas fa-search" onclick="seach()"></i>
+            </div>
+            <div>           
+                <i class="fas fa-bell"></i>
+            </div>
         </div>
        
     </header>
@@ -51,6 +58,23 @@
             <div class="carrosel-filmes">
                 <div class="container">            
                     <h2 class="categoria"> Lançamentos</h3>
+                </div>                
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img class="box-filme" src="img/min-01.jpg" alt="" srcset=""></div>
+                    <div class="item"><img class="box-filme" src="img/min-02.jpg" alt="" ></div>
+                    <div class="item"><img class="box-filme" src="img/min-03.jpg" alt="" ></div>
+                    <div class="item"><img class="box-filme" src="img/min-04.jpg" alt="" ></div>
+                    <div class="item"><img class="box-filme" src="img/min-05.jpg" alt="" ></div>
+                    <div class="item"><img class="box-filme" src="img/min-06.jpg" alt="" ></div>
+                    <div class="item"><img class="box-filme" src="img/min-07.jpg" alt="" ></div>
+                    <div class="item"><img class="box-filme" src="img/min-08.jpg" alt="" ></div>
+                    <div class="item"><img class="box-filme" src="img/min-09.jpg" alt="" ></div>
+                    <div class="item"><img class="box-filme" src="img/min-10.jpg" alt="" ></div>
+                </div>
+            </div>
+            <div class="carrosel-filmes">
+                <div class="container">            
+                    <h2 class="categoria">Top 10</h3>
                 </div>                
                 <div class="owl-carousel owl-theme">
                     <div class="item"><img class="box-filme" src="img/min-01.jpg" alt="" srcset=""></div>
