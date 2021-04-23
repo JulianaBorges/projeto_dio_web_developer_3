@@ -57,14 +57,17 @@ header .notificacao{
     align-items: baseline;
     display: flex;
     justify-content: space-evenly;
-    width: 30%;
+    width: 20%;
 }
 .search{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 .fa-search{
-    margin-left: 10px;
+    margin: 5px;
+}
+.fa-bell{
+    margin: 5px;
 }
 
 .filme-principal{
@@ -81,7 +84,7 @@ header .notificacao{
 }
 
 .descricao{
-    /*width: 60%;  to do: atrapalha o respose*/
+    width: 70%;  /*to do: atrapalha o respose*/
     margin: 10px 0px;  
 }
 
