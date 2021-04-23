@@ -56,12 +56,15 @@ header .notificacao{
     margin-right: 20px;
     align-items: baseline;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     width: 30%;
 }
 .search{
     display: flex;
     justify-content: flex-start;
+}
+.fa-search{
+    margin-left: 10px;
 }
 
 .filme-principal{
@@ -144,16 +147,17 @@ font-size: 40px;
     header .container{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        
     }
+    
     .container{
+        width: 100%;
         margin-right: 2.5%;
     }
 
     .notificacao{
         visibility:hidden;
     }
-    
     
     .botao{        
         margin-top: 5px;
